@@ -24,7 +24,8 @@ John Canny's paper on 'A Computational Approach to Edge Detection' [ https://pdf
 
 Result
 -------------
-![marr hildreth result](https://github.com/adl1995/edge-detectors/blob/master/marr-hildreth-edge.py)
+![canny result](https://github.com/adl1995/edge-detectors/blob/master/result-canny.png)
+
 
 How to run
 -------------
