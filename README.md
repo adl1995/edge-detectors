@@ -24,8 +24,6 @@ John Canny's paper on 'A Computational Approach to Edge Detection' [ https://pdf
 
 Result
 -------------
-![canny result](https://github.com/adl1995/edge-detectors/blob/master/result-canny.png)
-
 ![marr hildreth result](https://github.com/adl1995/edge-detectors/blob/master/marr-hildreth-edge.py)
 
 How to run
@@ -42,7 +40,44 @@ Clone this repository using
 > git clone https://github.com/adl1995/edge-detectors.git
 
 After this, just open up a terminal and type
-> python canny-edge.py
 > python marr-hildreth-edge.py
 
+Marr Hildreth
+-
 
+Description
+-
+Find edges in digital images where there are strong and rapid variations in image brightness. The Marr–Hildreth edge detection method operates by convolving the image with the Laplacian of the Gaussian function, or, as a fast approximation by Difference of Gaussians. Then, zero crossings are detected in the filtered result to obtain the edges.
+
+Steps Involved
+-
+
+- Applying Gaussian filter to smooth out the image
+- Finding zero crossings
+
+
+Motivation
+-------------
+
+Hildreth's paper on "Theory of edge detection" [ http://www.hms.harvard.edu/bss/neuro/bornlab/qmbc/beta/day4/marr-hildreth-edge-prsl1980.pdf ]
+
+Result
+-------------
+
+![marr hildreth result](https://github.com/adl1995/edge-detectors/blob/master/result-marr-hildreth.png)
+
+How to run
+-------------
+
+To run this program you need the following libraries installed:
+
+ - Matplotlib
+ - Skimage
+ - Numpy
+ - mpl_toolkits
+
+Clone this repository using 
+> git clone https://github.com/adl1995/edge-detectors.git
+
+After this, just open up a terminal and type
+> python marr-hildreth-edge.py
