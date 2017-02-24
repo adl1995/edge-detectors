@@ -46,7 +46,7 @@ def edgesMarrHildreth(img, sigma):
 					zero_crossing[i][j] = 255
 			if log[i][j] < 0:
 				if (log[i][j-1] > 0) or (log[i][j+1] > 0) or (log[i-1][j] > 0) or (log[i+1][j] > 0):
-					zero_crossing[i][j] = 255
+					zero_crossing[i][j] = 255 
 
 	# plotting images
 	fig = plt.figure()
